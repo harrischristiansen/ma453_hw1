@@ -25,20 +25,20 @@
 \item {\bfseries p24 B.5.}
   $x*y = xy + 1$
   \begin{itemize}
-  \item {\bfseries Commutative} Yes/No
-  \item {\bfseries Associative} Yes/No
-  \item {\bfseries Identity} Yes/No
-  \item {\bfseries Inverses} Yes/No
+  \item {\bfseries Commutative} Yes
+  \item {\bfseries Associative} Yes
+  \item {\bfseries Identity} Yes
+  \item {\bfseries Inverses} No
   \end{itemize} 
  
 %%% Problem p24 B.6
 \item {\bfseries p24 B.6.}
   $x*y = \max\{x,y\}$ = the larger of the two numbers x and y
   \begin{itemize}
-  \item {\bfseries Commutative} Yes/No
-  \item {\bfseries Associative} Yes/No
-  \item {\bfseries Identity} Yes/No
-  \item {\bfseries Inverses} Yes/No
+  \item {\bfseries Commutative} Yes
+  \item {\bfseries Associative} Yes
+  \item {\bfseries Identity} Yes
+  \item {\bfseries Inverses} No
   \end{itemize} 
  
 %%% Problem p29 A.1
@@ -48,7 +48,26 @@
   $x*y = x + y + k$ (k is a fixed constant), on the set $\mathbb{R}$ of the real numbers
   
   {\bfseries Solution.}
-  Answer
+  
+  Let $x, y \in \mathbb{R}$ be real numbers. Forms in $*$ are {\bfseries commutative} iff $x*y = y*x$. \\
+  $x*y = x + y + k$ \\
+  $y*x = y + x + k$ \\
+  $x + y + k = y + x + k$ \\
+  Based upon the commutative nature of addition in the real numbers the above equations are equal $\qed$\\
+  
+  Let $x, y, z \in \mathbb{R}$ be real numbers. Forms in $*$ are {\bfseries associative} iff $(x*y)*z = y*(x*z)$. \\
+  $(x*y)*z = (x + y + k) + z + k$ \\
+  $x*(y*z) = x + (y + z +k) + k$ \\
+  $x + y + k = y + x + k$ \\
+  Based upon the commutative nature of addition in the real numbers the above equations are equal $\qed$\\
+   
+  Let $x,e \in \mathbb{R}$ be real numbers. Forms in $*$ have an {\bfseries identify} iff $x*e = x$. \\
+  $x*e = x + e + k = x$ is true for all x with $e = -k$ $\qed$\\
+  
+  Let $x,x^{-1} \in \mathbb{R}$ be real numbers. Forms in $*$ have an {\bfseries inverse} iff $x*x^{-1} = 1$. \\
+  $x*x^{-1} = x + x^{-1} + k = 1$ is true for all x with $x^{-1} = -x-k+1$ $\qed$\\
+  
+  Thus, because the group is true for commutative, associative, identify, and inverse, it is an abelian group. $\qed$\\
  
 %%% Problem p29 A.2
 \item {\bfseries p29 A.2.}
@@ -57,7 +76,26 @@
   $x*y = \frac{xy}{2}$ on the set $\{x \in \mathbb{R} : x \neq 0\}$
   
   {\bfseries Solution.}
-  Answer
+  
+  Let $x, y \in \{x \in \mathbb{R} : x \neq 0\}$ be real numbers. Forms in $*$ are {\bfseries commutative} iff $x*y = y*x$. \\
+  $x*y = \frac{xy}{2}$ \\
+  $y*x = \frac{yx}{2}$ \\
+  $\frac{xy}{2} = \frac{yx}{2}$ \\
+  Based upon the commutative nature of multiplication in the real numbers the above equations are equal $\qed$\\
+  
+  Let $x, y, z \in \{x \in \mathbb{R} : x \neq 0\}$ be real numbers. Forms in $*$ are {\bfseries associative} iff $(x*y)*z = y*(x*z)$. \\
+  $(x*y)*z = \frac{(\frac{xy}{2})z}{2}$ \\
+  $x*(y*z) = \frac{x(\frac{yz}{2})}{2}$ \\
+  $\frac{(\frac{xy}{2})z}{2} = \frac{x(\frac{yz}{2})}{2}$ \\
+  Based upon the commutative nature of multiplication in the real numbers the above equations are equal $\qed$\\
+   
+  Let $x,e \in \{x \in \mathbb{R} : x \neq 0\}$ be real numbers. Forms in $*$ have an {\bfseries identify} iff $x*e = x$. \\
+  $x*e = \frac{xe}{2} = x$ is true for all x with $e = 2$\\
+  
+  Let $x,x^{-1} \in \{x \in \mathbb{R} : x \neq 0\}$ be real numbers. Forms in $*$ have an {\bfseries inverse} iff $x*x^{-1} = 1$. \\
+  $x*x^{-1} = \frac{xx^{-1}}{2} = 1$ is true for all x with $x^{-1} = 2/x$ $\qed$\\
+  
+  Thus, because the group is true for commutative, associative, identify, and inverse, it is an abelian group. $\qed$\\
  
 %%% Problem p39 A.1
 \item {\bfseries p39 A.1.}
